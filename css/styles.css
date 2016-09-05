@@ -1,0 +1,472 @@
+@font-face {
+    font-family: "Lato Bold"; /* Имя шрифта */
+    src: url(../fonts/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-family: "Lato Light";
+    src: url(../fonts/Lato-Light.ttf);
+    font-family: "Lato"; /* Имя шрифта */
+    src: url(../fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: "Quicksand"; /* Имя шрифта */
+    src: url(../fonts/Quicksand-Regular.otf); /* Путь к файлу со шрифтом */
+    font-family: "Helvetica Neue"; /* Имя шрифта */
+    src: url(../fonts/HelveticaNeue.otf); /* Путь к файлу со шрифтом */
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #6a74ab;
+    text-decoration: underline;
+}
+
+.starnight-header-background {
+    background: url(../images/background.png) no-repeat scroll center top;
+    background-color: #cccccc;
+    width: 1600px;
+    min-height: 880px;
+    padding-top: 1px;
+    text-align: center;
+    margin: none;
+}
+.starnight-header {
+    color: #fff;
+    font-family: 'Lato Light';
+    font-size: 60px;
+    font-weight: normal;
+    padding: none;
+    margin-top: 182px;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+.starnight-header-description {
+    color: #d0e7e9;
+    font-family: Lato;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 2;
+    margin: 0 auto;
+    text-align: center;
+    width: 690px;
+}
+.starnight-header-play-button {
+    position: relative;
+    border: 10px solid #fff;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-top: 75px ;
+}
+.starnight-header-play-button:before {
+    position: absolute;
+    left: 32px;
+    top: 23px;
+    content:'';
+    border-left:  25px solid white;
+    border-top: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+/*.starnight-header-play-button:after {
+    position: absolute;
+    left: 23px;
+    top: 20px;
+    content: '';
+    border-left: 18px solid white;
+    border-top: 18px solid white;
+    border-right: 18px solid white;
+    border-bottom: 18px solid white
+}*/
+.starnight-header-play-button:hover {
+    cursor: pointer;
+}
+.starnight-header-get-started-button {
+    background: #7accc8;
+    padding: 25px 80px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 1px rgba(255,255,255,.41);
+    color: white;
+    font-size: 22px;
+    font-family: Lato;
+    font-weight: Bold;
+    vertical-align: middle;
+    margin-top: 260px ;
+}
+.starnight-header-get-started-button:hover {
+    cursor: pointer;
+    color: black;
+}
+.starnight-download-section {
+    background-color: #e8b968;
+    width: 1600px;
+    height: 759px;
+}
+.starnight-download-section-circles {
+    position: absolute;
+    margin-top: 318px;
+    margin-left: 785px;
+    z-index: 1;
+}
+.starnight-download-section-ipad-shadow {
+    position: absolute;
+    width: 646px;
+    margin-top: 67px;
+    margin-left: 976px;
+}
+.starnight-download-section-ipad {
+    position: absolute;
+    clip: rect(0px,624px,692px,0px);
+    border-radius: 49px;
+    z-index: 2;
+    margin-left: 20px;
+}
+.starnight-download-section-header{
+    position: absolute;
+    float: left;
+    width: 700px;
+    margin-top: 90px;
+    margin-left: 200px;
+    font-family: "Lato Light";
+    font-size: 55px;
+    color: #fff;
+
+}
+.starnight-download-section-description {
+    position: absolute;
+    font-family: Lato;
+    font-size: 16px;
+    color: #fff;
+    z-index: 3;
+    display: inline-block;
+}
+.starnight-download-section-description > p {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    z-index: 3;
+}
+.starnight-download-section-download-button {
+    position: absolute;
+    width: 280px;
+    height: 68px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: solid 3px #fff;
+    font-family: Lato;
+    font-weight: Bold;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    margin-top: 299px;
+    cursor: pointer;
+}
+.starnight-user-comments-section-background {
+    height: 599px;
+    width: 1600px;
+    background: url(../images/SplitShire.jpg) no-repeat scroll left top;
+}
+.starnight-user-comments-section {
+    height: 599px;
+    width: 1600px;
+    background-color: #666666;
+    opacity: 0.9;
+}
+
+.starnight-user-comments-section-user-photo {
+    margin: 134px 735px 0;
+    border: 6px solid white;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+.starnight-user-comments-section-user-comment {
+
+
+    text-align: center;
+    margin: 35px auto 0 auto;
+    width: 1160px;
+    font-family: Lato;
+    font-size: 43px;
+    font-style: italic;
+    color: #fff;
+}
+.starnight-user-comments-section-button-comment-navigation {
+
+    margin: 65px auto 0 auto;
+    
+    width: 96px;
+    height: 16px;
+}
+.starnight-user-comments-section-button-comment-previous {
+    float: left;
+    border: 3px solid white;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.starnight-user-comments-section-button-comment-previous:hover {
+    cursor: pointer ;
+}
+.starnight-user-comments-section-button-comment-next {
+    float: right;
+    border: 3px solid white;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.starnight-user-comments-section-button-comment-next:hover {
+    cursor: pointer ;
+}
+.starnight-user-comments-section-button-comment-current {
+    text-align: center;
+    margin: 0 18px;
+    border: 3px solid white;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.starnight-user-comments-section-button-comment-current:hover {
+    cursor: pointer ;
+}
+.starnight-user-comments-section-bottom-triangle {
+    border-left: 20px solid transparent;
+    border-top: 25px solid #676767;
+    border-right: 20px solid transparent;
+    height: 0;
+    margin: 0 auto;
+    width: 0;
+}
+.starnight-try-demo-section-background {
+    width: 1600px;
+    height: 825px;
+    background-color: #fff;
+}
+.starnight-try-demo-section-article {
+    color: #7a8387;
+    display: inline-block;
+    margin-left: 210px;
+    margin-top: 55px;
+    width: 520px;
+}
+
+.starnight-article-header {
+    font-family: Lato;
+    font-weight: Bold;
+    color: #9197a8;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.starnight-article-content {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.starnight-try-demo-section-try-demo-button {
+    background-color: #f69679;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    height: 60px;
+    font-family: Lato;
+    font-weight: Bold;
+    font-size: 18px;
+    margin: 100px auto 0 auto;
+    letter-spacing: 0.025em;
+    width: 180px;
+}
+
+.starnight-try-demo-section-try-demo-button:hover {
+    color: #000;
+    cursor: pointer;
+}
+.starnight-squares-section {
+    background-color: #f6f6f4;
+    width: 1600px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.starnight-square-area-square {
+    width: 340px;
+    height: 340px;
+}
+
+.starnight-squares-section-square-area {
+    display: inline-block;
+    margin-left: 22px;
+}
+
+.starnight-squares-section-square-area:first-child {
+    margin-left: 213px;
+}
+
+#starnight-left-square {
+    background: #f69679;
+}
+
+#starnight-right-square {
+    background: #e8b968;
+}
+.starnight-square-area-textblock {
+    width: 300px;
+    height: 115px;
+    background: white;
+    border-bottom: 3px solid #eaeaea;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.starnight-square-area-textblock-subtitle {
+    color: #9197a8;
+    font-family: Lato;
+    font-weight: Bold;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+}
+
+.starnight-square-area-textblock-text {
+    color: #7a8387;
+    font-family: Lato;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.starnight-squares-section-text-block {
+    display: inline-block;
+    margin-left: 45px;
+    font-family: Lato;
+    width: 420px;
+    height: 340px;
+    color: #abbcc3;
+    vertical-align: top;
+}
+
+.starnight-squares-section-textblock-title {
+    font-family: 'Lato Light';
+    font-weight: normal;
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.starnight-squares-section-textblock-text{
+    margin-top: 25px;
+    line-height: 2;
+}
+
+.starnight-squares-section-navigation{
+    text-align: right;
+    margin-right: 150px;
+
+}
+
+.starnight-squares-section-navigation input{
+    border: none;
+    font-family: Quicksand;
+    font-weight: Bold;
+    font-size: 24px;
+    color: #959595;
+    background: transparent;
+    cursor: pointer;
+    padding: 0 2px;
+}
+.starnight-squares-section-navigation input:hover {
+    color: darkslategrey;
+}
+
+footer {
+    position: absolute;
+    width: 1600px;
+    height: 693px;
+    background-color: #7accc8;
+    color: #fff;
+}
+.starnight-menu-section-textblock {
+    margin-left: 200px;
+    margin-top: 75px;
+    height: 230px;
+    font-family: "Helvetica Neue";
+    font-weight: Bold;
+    letter-spacing: -0.025em;
+
+
+}
+
+.starnight-menu-section-left-textblock {
+    display: inline-block;
+    float: left;
+    width: 380px;
+}
+
+.starnight-menu-section-center-textblock {
+    display: inline-block;
+    width: 219px;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.starnight-menu-section-menu {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-right: 240px;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+.starnight-menu-section-menu ul {
+    list-style-type: none;
+
+}
+
+.starnight-menu-section-menu ul li {
+    padding-bottom: 20px;
+}
+
+.starnight-menu-section-logo {
+    display: block;
+    height: 60px;
+    margin: 80px auto;
+    width: 60px;
+}
+
+.starnight-menu-section-url {
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    letter-spacing:0.5em;
+}
